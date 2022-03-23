@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo ou Brasileiro</title>
+</head>
+<body>
+    <h1>Sistema de identificação</h1>
+    Qual pais você nasceu? <input type="text" name="texto" id="texto">
+    <input type="button" value="Identificar" onclick="identificar()">
+    <div id="resultado">
+        
+    </div>
+    <script>
+        function identificar() {
+            var txt = document.getElementById('texto')
+            var res = document.getElementById('resultado')
+            if (txt == 'brasil') {
+                res.innerHTML = "Você é Brasileiro!"
+            }   else {
+                res.innerHTML = "Você é Estrangeiro!"
+            }
+        }
+    </script>
+</body>
+</html>
